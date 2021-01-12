@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import TodoList from './components/TodoList';
+import logoImg from '../src/assets/ifoodComunica.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/styles/global.css';
 
+/*################### LandingPage  ################ */
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="page-landing">
+        <div id="page-landing-content" >
+            <div className="logo-container">
+                <img src={logoImg} alt="ifood" />
+            </div>
+            <div className='todo-app'>
+                <TodoList />
+            </div>
+        </div>
     </div>
   );
 }

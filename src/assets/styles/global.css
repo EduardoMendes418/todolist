@@ -1,0 +1,18 @@
+
+#root{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html,body{
+    height: 100vh;
+    background: #ea1c2d !important;
+}
+
+.container{
+    width: 90vw;
+    max-width: 700px;
+}
+

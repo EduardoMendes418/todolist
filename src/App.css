@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+/*#######################  Mobile ##########################*/
+#page-landing{
+  width: 100vw;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app {
   display: flex;
   flex-direction: column;
+  justify-content: -webkit-box-pack start;
+  width: 450px;
+  min-height: 450px;
+  background: #fff;
+  text-align: center;
+  margin: 0px;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1{
+  margin: 32px 0;
+  color: #ea1c2d;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+h1 a{
+  padding-left: 10px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #ccc;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #000;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #ea1c2d !important;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #ccc;
+}
+
+.todo-button.edit {
+  background: #ea1c2d !important;
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 4px auto;
+  color: #fff;
+  background: #ea1c2d !important;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-row:nth-child(4n + 1) {
+  background: #ea1c2d !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-row:nth-child(4n + 2) {
+  background: #ea1c2d !important;
 }
+
+.todo-row:nth-child(4n + 3) {
+  background: #ea1c2d !important;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+.logo-container img {
+  height: 15rem;
+  padding: 20px;
+  margin: auto ;
+  margin-top: 150px ;
+}
+
+.logo-container{
+  align-self: center;
+  text-align: center;
+  margin: 0;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: -webkit-box-pack start;
+  width: auto;
+  min-height: 450px;
+  background: #fff;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  margin-bottom: 50px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #ccc;
+  outline: none;
+  background: transparent;
+  color: #000;
+  width: auto;
+}
+
+
+/*#######################  Desktop ##########################*/
+@media only screen and (min-width: 1100px) { 
+
+h1 a{
+    padding-left: 10px;
+}
+    
+#page-landing-content{
+    max-width: 1100px;
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+  
+}
+.logo-container{
+    align-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+.logo-container img {
+  height: 35rem;
+  padding: 20px;
+  margin: auto ;
+  margin-top: 100px ;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: -webkit-box-pack start;
+  width: 450px;
+  min-height: 450px;
+  background: #fff;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #ccc;
+  outline: none;
+  background: transparent;
+  color: #000;
+  width: 70%;
+}
+
+}
+
